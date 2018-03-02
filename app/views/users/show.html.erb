@@ -1,0 +1,46 @@
+<p id="notice">
+  <form>
+  <%= notice %></p>
+<div class="form-group">
+<div class="container">
+  <div class="row">
+<div class="col-xs-8 col-sm-6">
+  <strong>الاسم:</strong><br><br>
+</div>
+<div class="col-xs-4 col-sm-6">
+  <%= @user.name %><br><br>
+</div>
+<div class="col-xs-8 col-sm-6">
+<strong>اقرب نقطة دالة:</strong><br><br>
+</div>
+  <div class="col-xs-4 col-sm-6">
+  <%= @user.location %><br><br>
+</div>
+<div class="col-xs-4 col-sm-6">
+  <strong> الحالة:</strong><br><br>
+</div>
+<div class="col-xs-4 col-sm-6">
+  <%= @user.condition %><br><br>
+</div>
+<div class="col-xs-4 col-sm-6">
+  <strong>الصورة:</strong><br><br>
+</div>
+<div class="col-xs-4 col-sm-6">
+  <%= image_tag @user.image, size:'100*100' %><br><br>
+</div>
+<div class="col-xs-4 col-sm-6">
+  <strong>وصف الحالة بالتفصيل:</strong><br><br>
+</div>
+  <div class="col-xs-4 col-sm-6">
+  <%= @user.description %><br><br>
+</div>
+</div>
+<br>
+<div class="btn-group">
+<%= link_to 'تعديل', edit_user_path(@user),class:"btn defaults" %>
+<%= link_to 'رجوع', users_path ,class:"btn default" %>
+</div>
+</div>
+</div>
+</div>
+</form>  
